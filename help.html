@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>xRate</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_title.png" />
+    <meta name="description" content="Exchange Currency, web app, convert currency">
+    <meta name="author" content="Cindy Guo">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  -------- material google ------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  -------- .css ------->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <!--  -------- themes.css ------->
+    <link rel="stylesheet" href="css/theme_default.css">
+    <link rel="stylesheet" href="css/theme_green+yellow.css">
+    <link rel="stylesheet" href="css/theme_red.css">
+    <link rel="stylesheet" href="css/theme_pink.css">
+    <link rel="stylesheet" href="css/theme_green+blue.css">
+    <link rel="stylesheet" href="css/theme_pink+blue.css">
+    <!--  -------- font ------->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+</head>
+
+<body class="default" id="edit-html">
+    <div id="landscape">
+        <div class="container">
+            <img src="img/oops.png">
+            <div>
+                <h2>Oops!</h2>
+                <p>Please rotate your phone!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--  Portrait-->
+    <div id="portrait">
+        <nav>
+            <i class="material-icons" onclick="jmp2Page('settings.html')">arrow_back</i>
+            <div>Help</div>
+        </nav>
+
+        <div id="help_main">
+            <p>xRate is a small and simple web app to convert the exchagne currency for travellers.</p>
+            <p>As you input numbers, the results will show automatically.</p>
+            <p>In Settings, you can check Access Location so that the currency you are using will appear at the top of the home page.</p>
+            <p>In Edit, you can add or remove the currency in the home page.</p>
+            <p>In Themes, xRate provides six themes for you to choose.</p>
+        </div>
+    </div>
+    <!-- JAVASCRIPT -->
+
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var body_theme = $('body').attr('class');
+        if (typeof (Storage) != "undefined") {
+            var theme_sel = localStorage.getItem("theme_set");
+            if (theme_sel != null && body_theme != theme_sel) {
+                $('body').removeClass(body_theme);
+                $('body').addClass(theme_sel);
+            }
+        }
+    </script>
+</body>
+
+</html>

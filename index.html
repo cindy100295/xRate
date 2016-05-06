@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+
+<head>
+    <title>xRate</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_title.png" />
+    <meta name="description" content="Exchange Currency, web app, convert currency">
+    <meta name="author" content="Cindy Guo">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  -------- material google ------->
+    <!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--  -------- .css ------->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <link rel="stylesheet" href="css/css-add2home.css">
+    <!--  -------- themes.css ------->
+    <link rel="stylesheet" href="css/theme_default.css">
+    <link rel="stylesheet" href="css/theme_green+yellow.css">
+    <link rel="stylesheet" href="css/theme_red.css">
+    <link rel="stylesheet" href="css/theme_pink.css">
+    <link rel="stylesheet" href="css/theme_green+blue.css">
+    <link rel="stylesheet" href="css/theme_pink+blue.css">
+    <!--  -------- font ------->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!--  —————————————————————-->
+    <!-- **** ICONS **** -->
+    <!-- iPhone retina icon (iOS < 7) -->
+    <link href="img/icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
+    <!-- iPhone non-retina icon (iOS < 7) -->
+    <link href="img/icon-57x57.png" sizes="57x57" rel="apple-touch-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_title.png" />
+
+    <!-- **** STARTUP IMAGES **** -->
+
+    <!-- iPad retina portrait startup image -->
+    <link href="img/start-up/xRate-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+and (-webkit-device-pixel-ratio: 2)
+and (orientation: portrait)" rel="apple-touch-startup-image">
+
+    <!-- iPad retina landscape startup image -->
+    <link href="img/start-up/xRate-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+and (-webkit-device-pixel-ratio: 2)t
+and (orientation: landscape)" rel="apple-touch-startup-image">
+
+    <!-- iPad non-retina portrait startup image -->
+    <link href="img/start-up/xRate-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+and (-webkit-device-pixel-ratio: 1)
+and (orientation: portrait)" rel="apple-touch-startup-image">
+
+    <!-- iPad non-retina landscape startup image -->
+    <link href="img/start-up/xRate-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+and (-webkit-device-pixel-ratio: 1)
+and (orientation: landscape)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 6 Plus portrait startup image -->
+    <link href="img/start-up/xRate-startup-image-1242x2148.png" media="(device-width: 414px) and (device-height: 736px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 6 Plus landscape startup image -->
+    <link href="img/start-up/xRate-startup-image-1182x2208.png" media="(device-width: 414px) and (device-height: 736px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 6 startup image -->
+    <link href="img/start-up/xRate-startup-image-750x1294-P.png" media="(device-width: 375px) and (device-height: 667px)
+and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 startup image -->
+    <link href="img/start-up/xRate-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone < 5 retina startup image -->
+    <link href="img/start-up/xRate-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone < 5 non-retina startup image -->
+    <link href="img/start-up/xRate-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+</head>
+
+<body class="default" id="index-html">
+    <div id="landscape">
+        <div class="container">
+            <img src="img/oops.png">
+            <div>
+                <h2>Oops!</h2>
+                <p>Please rotate your phone!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="portrait">
+        <nav>
+            <i class="material-icons" onclick="jmp2Page('settings.html')">menu</i>
+            <div>x-Rate</div>
+            <i class="material-icons add" onclick="jmp2Page('edit.html')">edit</i>
+        </nav>
+        <div id="main">
+            <ul>
+
+                <li class="location" id="us">
+                    <form id="f-us">
+                        <span class="flag-icon-background flag-icon-us"></span>
+                        <h2 class="loc_title">USD</h2>
+                        <input id="input_us" name="USD" class="loc_input" type="number" placeholder="100.00" step="0.01" />
+                        <p class="loc_p">United States Dollars</p>
+                    </form>
+                </li>
+
+                <li class="selection" id="eu">
+                    <form id="f-eu">
+                        <span class="flag-icon-background flag-icon-eu"></span>
+                        <h2 class="select_title">EUR</h2>
+                        <input id="input_eu" name="EUR" class="select_input" type="number" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Euro</p>
+                    </form>
+                </li>
+
+                <li class="selection" id="cn">
+                    <form id="f-cn">
+                        <span class="flag-icon-background flag-icon-cn"></span>
+                        <h2 class="select_title">CNY</h2>
+                        <input type="number" id="input_cn" name="CNY" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Chinese Yuan</p>
+                    </form>
+                </li>
+
+                <li class="non-select" id="au">
+                    <form id="f-jp">
+                        <span class="flag-icon-background flag-icon-au"></span>
+                        <h2 class="select_title">AUD</h2>
+                        <input type="number" id="input_au" name="JPY" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Australian dollar</p>
+                    </form>
+                </li>
+
+                <li class="selection" id="jp">
+                    <form id="f-jp">
+                        <span class="flag-icon-background flag-icon-jp"></span>
+                        <h2 class="select_title">JPY</h2>
+                        <input type="number" id="input_jp" name="JPY" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Japanese yen</p>
+                    </form>
+                </li>
+
+                <li class="selection" id="hk">
+                    <form id="f-hk">
+                        <span class="flag-icon-background flag-icon-hk"></span>
+                        <h2 class="select_title">HKD</h2>
+                        <input type="number" id="input_hk" name="HKD" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Hong Kong dollar</p>
+                    </form>
+                </li>
+
+                <li class="non-select" id="au">
+                    <form id="f-au">
+                        <span class="flag-icon-background flag-icon-au"></span>
+                        <h2 class="select_title">AUD</h2>
+                        <input type="number" id="input_ au" name="AUD" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Australian Dollar</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select" id="bg">
+                    <form id="f-bg">
+                        <span class="flag-icon-background flag-icon-bg"></span>
+                        <h2 class="select_title"> BGN</h2>
+                        <input type="number" id="input_ bg" name=" BGN" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p"> Bulgarian Lev</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select" id="br">
+                    <form id="f-br">
+                        <span class="flag-icon-background flag-icon-br"></span>
+                        <h2 class="select_title">BRL</h2>
+                        <input type="number" id="input_ br" name=" BRL" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Brazilian Real</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select" id="ca">
+                    <form id="f-ca ">
+                        <span class="flag-icon-background flag-icon-ca "></span>
+                        <h2 class="select_title "> CAD</h2>
+                        <input type="number " id="input_ ca" name="CAD" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Canadian Dollar</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="ch">
+                    <form id="f-ch ">
+                        <span class="flag-icon-background flag-icon-ch"></span>
+                        <h2 class="select_title "> CHF</h2>
+                        <input type="number " id="input_ ch" name="CHF" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Swiss Franc</p>
+                    </form>
+                </li>
+
+                <li class="non-select " id="cz">
+                    <form id="f-cz ">
+                        <span class="flag-icon-background flag-icon-cz"></span>
+                        <h2 class="select_title "> CZK</h2>
+                        <input type="number " id="input_ cz" name="CZK" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p ">Czech Koruna</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="dk">
+                    <form id="f-dk ">
+                        <span class="flag-icon-background flag-icon-dk"></span>
+                        <h2 class="select_title "> DKK</h2>
+                        <input type="number " id="input_ dk" name="DKK" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p ">Danish Krone</p>
+                    </form>
+                </li>
+
+                <li class="non-select " id="gb">
+                    <form id="f-gb ">
+                        <span class="flag-icon-background flag-icon-gb"></span>
+                        <h2 class="select_title ">GBP</h2>
+                        <input type="number " id="input_ gb" name="GBP" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p ">Pound Sterling</p>
+                    </form>
+                </li>
+
+                <li class="non-select " id="hr">
+                    <form id="f-hr ">
+                        <span class="flag-icon-background flag-icon-hr"></span>
+                        <h2 class="non-select ">HRK</h2>
+                        <input type="number" id="input_ hr" name="HRK" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p ">Croatian Kuna </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="hu">
+                    <form id="f-hu ">
+                        <span class="flag-icon-background flag-icon-hu "></span>
+                        <h2 class="select_title "> HUF </h2>
+                        <input type="number " id="input_ hu" name="HUF" class="select_input" placeholder="100.00" step="0.01" disabled/>
+                        <p class="select_p">Forint </p>
+                    </form>
+                </li>
+
+                <li class="non-select " id="il">
+                    <form id="f-il ">
+                        <span class="flag-icon-background flag-icon-il"></span>
+                        <h2 class="select_title"> ILS </h2>
+                        <input type="number " id="input_ il" name="ILS" class="select_input" placeholder="100.00" step="0.01 " disabled/>
+                        <p class="select_p ">New Israeli Shekel</p>
+                    </form>
+                </li>
+
+                <li class="non-select " id="id">
+                    <form id="f-id ">
+                        <span class="flag-icon-background flag-icon-id"></span>
+                        <h2 class="select_title">IDR</h2>
+                        <input type="number " id="input_id" name="IDR" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Indonesian Rupiah</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="bt">
+                    <form id="f-bt ">
+                        <span class="flag-icon-background flag-icon-bt"></span>
+                        <h2 class="select_title"> INR </h2>
+                        <input type="number " id="input_ bt" name="INR" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> Indian Rupee </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="jp">
+                    <form id="f-jp ">
+                        <span class="flag-icon-background flag-icon-jp"></span>
+                        <h2 class="select_title "> JPY </h2>
+                        <input type="number " id="input_ jp " name="JPY" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Japanese yen</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="kr">
+                    <form id="f-kr ">
+                        <span class="flag-icon-background flag-icon-kr"></span>
+                        <h2 class="select_title "> KRW </h2>
+                        <input type="number " id="input_ kr" name="KRW" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> South Korean Won </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="mx">
+                    <form id="f-mx ">
+                        <span class="flag-icon-background flag-icon-mx"></span>
+                        <h2 class="select_title "> MXN </h2>
+                        <input type="number " id="input_ mx" name="MXN" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> Mexican Peso </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="my">
+                    <form id="f-my ">
+                        <span class="flag-icon-background flag-icon-my"></span>
+                        <h2 class="select_title "> MYR </h2>
+                        <input type="number " id="input_ my" name="MYR" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> Malaysian Ringgit </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="no">
+                    <form id="f-no ">
+                        <span class="flag-icon-background flag-icon-no"></span>
+                        <h2 class="select_title "> NOK </h2>
+                        <input type="number " id="input_ no" name="NOK" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> Norwegian Krone </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="nz">
+                    <form id="f-nz ">
+                        <span class="flag-icon-background flag-icon-nz"></span>
+                        <h2 class="select_title "> NZD </h2>
+                        <input type="number " id="input_ nz" name="NZD" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> New Zealand Dollar </p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="ph">
+                    <form id="f-ph ">
+                        <span class="flag-icon-background flag-icon-ph"></span>
+                        <h2 class="select_title ">PHP</h2>
+                        <input type="number " id="input_ph" name="PHP" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Philippine Peso</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="pl">
+                    <form id="f-pl ">
+                        <span class="flag-icon-background flag-icon-pl"></span>
+                        <h2 class="select_title ">PLN</h2>
+                        <input type="number " id="input_pl" name="PLN" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Zloty</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="ro">
+                    <form id="f-ro ">
+                        <span class="flag-icon-background flag-icon-ro "></span>
+                        <h2 class="select_title ">RON</h2>
+                        <input type="number " id="input_ro " name="RON " class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Romanian New Leu</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="ru">
+                    <form id="f-ru ">
+                        <span class="flag-icon-background flag-icon-ru "></span>
+                        <h2 class="select_title ">RUB</h2>
+                        <input type="number " id="input_ru " name="RUB " class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Russian Ruble</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select" id="se">
+                    <form id="f-se ">
+                        <span class="flag-icon-background flag-icon-se"></span>
+                        <h2 class="select_title ">SEK</h2>
+                        <input type="number " id="input_se" name="SEK" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Swedish Krona</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="sg">
+                    <form id="f-sg ">
+                        <span class="flag-icon-background flag-icon-sg"></span>
+                        <h2 class="select_title ">SGD</h2>
+                        <input type="number " id="input_sg" name="SGD" class="select_input" placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Singapore Dollar</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="th">
+                    <form id="f-th ">
+                        <span class="flag-icon-background flag-icon-th"></span>
+                        <h2 class="select_title "> THB </h2>
+                        <input type="number " id="input_th" name="THB" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p ">Baht</p>
+                    </form>
+                </li>
+
+
+                <li class="non-select " id="tr">
+                    <form id="f-tr ">
+                        <span class="flag-icon-background flag-icon-tr"></span>
+                        <h2 class="select_title "> TRY </h2>
+                        <input type="number " id="input_ tr" name="TRY" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> New Turkish Lira </p>
+                    </form>
+                </li>
+
+                <li class="non-select " id="za">
+                    <form id="f-za ">
+                        <span class="flag-icon-background flag-icon-za"></span>
+                        <h2 class="select_title "> ZAR </h2>
+                        <input type="number " id="input_ za" name="ZAR" class="select_input " placeholder="100.00 " step="0.01 " disabled/>
+                        <p class="select_p "> South African Rand </p>
+                    </form>
+                </li>
+
+
+
+            </ul>
+            <!--      <button id="convert ">Convert</button>-->
+        </div>
+    </div>
+    <!-- JAVASCRIPT -->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>-->
+    <script src="js/jquery-1.11.3.min.js "></script>
+
+    <script src="js/main.js "></script>
+
+    <script src="js/js-add2home.js "></script>
+    <script>
+        var body_theme = $('body').attr('class');
+        if (typeof (Storage) != "undefined ") {
+            var theme_sel = localStorage.getItem("theme_set ");
+            if (theme_sel != null && body_theme != theme_sel) {
+                $('body').removeClass(body_theme);
+                $('body').addClass(theme_sel);
+            }
+        }
+    </script>
+
+    <script type="text/javascript " src="js/api.js "></script>
+    <script>
+        var select_id = new Array();
+        select_id = localStorage.getItem("selected_id");
+        console.log("select_id" + select_id);
+        for (i = 0; i < 40; i = i + 3) {
+            var select_id_2 = select_id[i] + select_id[i + 1];
+//            console.log(select_id_2);
+            console.log($('#' + select_id_2));
+            $('#' + select_id_2).removeClass("non-select");
+            $('#' + select_id_2).addClass("selection");
+        }
+    </script>
+
+</body>
+
+</html>

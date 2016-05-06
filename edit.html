@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>xRate</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_title.png" />
+    <meta name="description" content="Exchange Currency, web app, convert currency">
+    <meta name="author" content="Cindy Guo">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  -------- material google ------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  -------- .css ------->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <!--  -------- themes.css ------->
+    <link rel="stylesheet" href="css/theme_default.css">
+    <link rel="stylesheet" href="css/theme_green+yellow.css">
+    <link rel="stylesheet" href="css/theme_red.css">
+    <link rel="stylesheet" href="css/theme_pink.css">
+    <link rel="stylesheet" href="css/theme_green+blue.css">
+    <link rel="stylesheet" href="css/theme_pink+blue.css">
+    <!--  -------- font ------->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+</head>
+
+<body class="default" id="edit-html">
+    <div id="landscape">
+        <div class="container">
+            <img src="img/oops.png">
+            <div>
+                <h2>Oops!</h2>
+                <p>Please rotate your phone!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--  Portrait-->
+    <div id="portrait">
+
+        <nav class="nav_s">
+            <i class="material-icons" onclick="jmp2Page('index.html')">arrow_back</i>
+            <div>Edit Currency</div>
+            <span class="material-icons add">search</span>
+        </nav>
+
+        <nav id="nav_search">
+            <i class="material-icons i_close">close</i>
+            <span class="material-icons add">search</span>
+            <input id="inpt_search" type="text" />
+        </nav>
+        <ul id="edit_main" class="sortable">
+
+
+
+            <li class="currency" id="us">
+                <span class="flag-icon-background flag-icon-us"></span>
+                <div>
+                    <h2>USD</h2>
+                    <p>United State Dollars</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="currency" id="eu">
+                <span class="flag-icon-background flag-icon-eu"></span>
+                <div>
+                    <h2>EUR</h2>
+                    <p>Euro</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="currency" id="cn">
+                <span class="flag-icon-background flag-icon-cn"></span>
+                <div>
+                    <h2>CNY</h2>
+                    <p>Chinese Yuan</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="currency" id="jp">
+                <span class="flag-icon-background flag-icon-jp"></span>
+                <div>
+                    <h2>JPY</h2>
+                    <p>Japanese Yen</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="currency" id="hk">
+                <span class="flag-icon-background flag-icon-hk"></span>
+                <div>
+                    <h2>HKD</h2>
+                    <p>HongKong Dollar</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="non-selected currency" id="au">
+                <span class="flag-icon-background flag-icon-au"></span>
+                <div>
+                    <h2>AUD</h2>
+                    <p>Australian Dollar</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+
+            <li class="non-selected currency" id="bg">
+                <span class="flag-icon-background flag-icon-bg"></span>
+                <div>
+                    <h2>BGN</h2>
+                    <p>Bulgarian Lev</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="br">
+                <span class="flag-icon-background flag-icon-br "></span>
+                <div>
+                    <h2>BRL</h2>
+                    <p>Brazilian Real</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="ca">
+                <span class="flag-icon-background flag-icon-ca"></span>
+                <div>
+                    <h2>CAD</h2>
+                    <p>Canadian Dollar</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency"  id="ch">
+                <span class="flag-icon-background flag-icon-ch"></span>
+                <div>
+                    <h2>CHF</h2>
+                    <p>Swiss Franc</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="non-selected currency" id="cz">
+                <span class="flag-icon-background flag-icon-cz"></span>
+                <div>
+                    <h2>CZK</h2>
+                    <p>Czech Koruna</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="dk">
+                <span class="flag-icon-background flag-icon-dk"></span>
+                <div>
+                    <h2>DKK</h2>
+                    <p>Danish Krone</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="non-selected currency" id="gb">
+                <span class="flag-icon-background flag-icon-gb"></span>
+                <div>
+                    <h2>GBP</h2>
+                    <p>Pound Sterling</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="non-selected currency" id="hr">
+                <span class="flag-icon-background flag-icon-hr"></span>
+                <div>
+                    <h2>HRK</h2>
+                    <p>Croatian Kuna</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="hu">
+                <span class="flag-icon-background flag-icon-hu"></span>
+                <div>
+                    <h2>HUF</h2>
+                    <p>Forint</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="id">
+                <span class="flag-icon-background flag-icon-id"></span>
+                <div>
+                    <h2>IDR</h2>
+                    <p>Rupiah</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="il">
+                <span class="flag-icon-background flag-icon-il"></span>
+                <div>
+                    <h2>ILS</h2>
+                    <p>New Israeli Shekel</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="bt">
+                <span class="flag-icon-background flag-icon-bt"></span>
+                <div>
+                    <h2>INR</h2>
+                    <p>Indian Rupee</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+            <li class="non-selected currency" id="kr">
+                <span class="flag-icon-background flag-icon-kr"></span>
+                <div>
+                    <h2>KRW</h2>
+                    <p>South Korean Won</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="mx">
+                <span class="flag-icon-background flag-icon-mx"></span>
+                <div>
+                    <h2>MXN</h2>
+                    <p>Mexican Peso</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="my">
+                <span class="flag-icon-background flag-icon-my"></span>
+                <div>
+                    <h2>MYR</h2>
+                    <p>Malaysian Ringgit</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="no">
+                <span class="flag-icon-background flag-icon-no"></span>
+                <div>
+                    <h2>NOK</h2>
+                    <p>Norwegian Krone</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="nz">
+                <span class="flag-icon-background flag-icon-nz"></span>
+                <div>
+                    <h2>NZD</h2>
+                    <p>New Zealand Dollar</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="ph">
+                <span class="flag-icon-background flag-icon-ph"></span>
+                <div>
+                    <h2>PHP</h2>
+                    <p>Philippine Peso</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="pl">
+                <span class="flag-icon-background flag-icon-pl"></span>
+                <div>
+                    <h2>PLN</h2>
+                    <p>Zloty</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="ro">
+                <span class="flag-icon-background flag-icon-ro"></span>
+                <div>
+                    <h2>RON</h2>
+                    <p>Romanian New Leu</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="ru">
+                <span class="flag-icon-background flag-icon-ru"></span>
+                <div>
+                    <h2>RUB</h2>
+                    <p>Russian Ruble</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="se">
+                <span class="flag-icon-background flag-icon-se"></span>
+                <div>
+                    <h2>SEK</h2>
+                    <p>Swedish Krona</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="sg">
+                <span class="flag-icon-background flag-icon-sg"></span>
+                <div>
+                    <h2>SGD</h2>
+                    <p>Singapore Dollar</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="th">
+                <span class="flag-icon-background flag-icon-th"></span>
+                <div>
+                    <h2>THB</h2>
+                    <p>Baht</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="tr">
+                <span class="flag-icon-background flag-icon-tr"></span>
+                <div>
+                    <h2>TRY</h2>
+                    <p>New Turkish Lira</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+
+            <li class="non-selected currency" id="za">
+                <span class="flag-icon-background flag-icon-za"></span>
+                <div>
+                    <h2>ZAR</h2>
+                    <p>South African Rand</p>
+                </div>
+                <i class="material-icons">menu</i>
+                <i class="material-icons ticked">done</i>
+            </li>
+
+        </ul>
+    </div>
+    <!-- JAVASCRIPT -->
+
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+<!--
+    <script>
+        $('.material-icons').onclick() {
+            (function () {
+                console.log("dragging");
+                $(".sortable").sortable();
+                $(".sortable").disableSelection();
+            })
+        };
+    </script>
+-->
+
+    <script src="js/main.js"></script>
+    <script>
+        var body_theme = $('body').attr('class');
+        if (typeof (Storage) != "undefined") {
+            var theme_sel = localStorage.getItem("theme_set");
+            if (theme_sel != null && body_theme != theme_sel) {
+                $('body').removeClass(body_theme);
+                $('body').addClass(theme_sel);
+            }
+        }
+    </script>
+
+    <!--    select currency-->
+    <script>
+        var storage_selected_id = new Array();
+        storage_selected_id = localStorage.getItem("selected_id");
+        for (i = 0; i < 40; i = i + 3) {
+            console.log("storage_selected_id: " + storage_selected_id[i]);
+            var storage_selected_id_2 = storage_selected_id[i] + storage_selected_id[i + 1];
+            console.log(storage_selected_id_2);
+            $('#' + storage_selected_id_2).removeClass("non-selected");
+        }
+    </script>
+</body>
+
+</html>

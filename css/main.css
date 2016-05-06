@@ -1,0 +1,491 @@
+/* line 1, main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, main.scss */
+#landscape {
+  display: none;
+}
+
+/* line 31, main.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 36, main.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 42, main.scss */
+nav {
+  height: 24px;
+  padding: 24px 20px;
+  font-family: 'Droid Sans', sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* line 48, main.scss */
+nav div {
+  display: inline;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+/* line 53, main.scss */
+nav .add {
+  position: absolute;
+  right: 20px;
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+/* line 59, main.scss */
+nav i {
+  vertical-align: middle;
+  margin: 0px 10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+/* line 72, main.scss */
+nav i:focus, nav i:hover, nav i:active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+/* line 86, main.scss */
+#main {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+/* line 90, main.scss */
+#main ul {
+  width: 100%;
+  height: 100%;
+}
+/* line 93, main.scss */
+#main ul li {
+  list-style: none;
+  border: solid 1px rgba(18, 66, 103, 0.2);
+  padding: 20px;
+  height: 36px;
+}
+/* line 100, main.scss */
+#main ul li img,
+#main ul li h2,
+#main ul li input {
+  display: inline;
+}
+/* line 103, main.scss */
+#main ul li span {
+  width: 48px;
+  height: 36px;
+  border-radius: 6px;
+  margin-right: 20px;
+  float: left;
+}
+/* line 110, main.scss */
+#main ul li h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  vertical-align: middle;
+  clear: both;
+}
+/* line 119, main.scss */
+#main ul li input[type=number]::-webkit-inner-spin-button,
+#main ul li input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+/* line 125, main.scss */
+#main ul li input {
+  width: 78px;
+  height: 24px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: right;
+  background: transparent;
+  outline: none;
+  border: none;
+  float: right;
+}
+/* line 137, main.scss */
+#main ul li p {
+  width: 120px;
+  font-size: 10px;
+  margin-top: -10px;
+  text-align: right;
+  float: right;
+  clear: both;
+}
+/* line 149, main.scss */
+#main ul .location {
+  height: 40px;
+}
+/* line 152, main.scss */
+#main ul .non-select {
+  display: none;
+}
+/* line 156, main.scss */
+#main button {
+  padding: 20px;
+  width: 100px;
+  height: 60px;
+  margin: 60px auto;
+  display: block;
+  border: none;
+}
+
+/* line 169, main.scss */
+#settings_main ul li {
+  border: solid 1px rgba(18, 66, 103, 0.2);
+  padding: 20px 30px;
+  height: 36px;
+}
+/* line 173, main.scss */
+#settings_main ul li h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+/* line 178, main.scss */
+#settings_main ul li p {
+  font-size: 10px;
+  width: 70%;
+}
+/* line 182, main.scss */
+#settings_main ul li label {
+  width: 50px;
+  height: 16px;
+  box-shadow: inset 0 0 0 30px gray;
+  border-radius: 30px;
+  display: block;
+  top: 110px;
+  right: 30px;
+  position: absolute;
+  z-index: 1;
+  transition: all 300ms ease 0s;
+}
+/* line 194, main.scss */
+#settings_main ul li #switch {
+  position: absolute;
+  top: 110px;
+  right: 40px;
+}
+/* line 199, main.scss */
+#settings_main ul li #switch:before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  display: block;
+  border: none;
+  z-index: 2;
+  box-shadow: inset 0 0 0 40px gray, 0 0 5px 0 gray;
+  transition: all 300ms ease-in 0s;
+}
+/* line 213, main.scss */
+#settings_main ul li #switch:checked:before {
+  right: 20px;
+  transition: all 300ms ease-in 0s;
+}
+/* line 221, main.scss */
+#settings_main ul li h3 {
+  font-size: 18px;
+  font-weight: 400;
+  vertical-align: middle;
+  line-height: 36px;
+}
+/* line 228, main.scss */
+#settings_main ul .access {
+  height: 56px;
+}
+
+/* line 235, main.scss */
+#theme_main {
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+  padding-bottom: 18px;
+}
+/* line 241, main.scss */
+#theme_main li {
+  border: solid 1px rgba(18, 66, 103, 0.2);
+  padding: 28px 40px;
+  height: 50px;
+}
+/* line 245, main.scss */
+#theme_main li img {
+  height: 48px;
+}
+/* line 248, main.scss */
+#theme_main li i {
+  display: none;
+  color: #48d4d1;
+  margin: 10px 0;
+  float: right;
+}
+/* line 254, main.scss */
+#theme_main li i.theme_tick {
+  display: inherit;
+  list-style: none;
+}
+
+/* line 262, main.scss */
+nav.nav_gone {
+  display: none;
+}
+
+/* line 266, main.scss */
+#nav_search {
+  display: none;
+}
+
+/* line 270, main.scss */
+#nav_search.nav_search {
+  display: inherit;
+}
+/* line 272, main.scss */
+#nav_search.nav_search span {
+  margin: 0 10px;
+}
+/* line 275, main.scss */
+#nav_search.nav_search .edit_text {
+  margin: 0;
+}
+/* line 278, main.scss */
+#nav_search.nav_search .edit_text.edit_text_gone {
+  display: none;
+}
+/* line 281, main.scss */
+#nav_search.nav_search span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 60px;
+}
+/* line 287, main.scss */
+#nav_search.nav_search #inpt_search {
+  width: 70%;
+  padding: 0px 10px;
+  position: relative;
+  top: -4px;
+  left: 30px;
+  height: 30px;
+  outline: 0px !important;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 298, main.scss */
+#nav_search.nav_search #inpt_search:before {
+  content: '';
+  border-bottom: solid 2px #e8f1f2;
+  width: 20px;
+  height: 20px;
+}
+/* line 305, main.scss */
+#nav_search.nav_search #inpt_search.inpt_search_show {
+  display: inherit;
+  width: 80%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 314, main.scss */
+#edit_main li.gone {
+  display: none;
+}
+/* line 317, main.scss */
+#edit_main li {
+  list-style: none;
+  border: solid 1px rgba(18, 66, 103, 0.2);
+  padding: 20px;
+  height: 36px;
+}
+/* line 324, main.scss */
+#edit_main li img,
+#edit_main li div,
+#edit_main li h2 {
+  display: inline;
+}
+/* line 327, main.scss */
+#edit_main li span {
+  width: 48px;
+  height: 36px;
+  border-radius: 6px;
+  margin-right: 20px;
+  float: left;
+}
+/* line 334, main.scss */
+#edit_main li div {
+  width: 80px;
+  height: 36px;
+  clear: both;
+}
+/* line 339, main.scss */
+#edit_main li h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  clear: both;
+}
+/* line 345, main.scss */
+#edit_main li p {
+  display: block;
+  width: 120px;
+  font-size: 10px;
+  text-align: left;
+  position: relative;
+  top: -10px;
+  left: 70px;
+  clear: both;
+}
+/* line 356, main.scss */
+#edit_main li i {
+  float: right;
+  position: relative;
+  top: -40px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 357, main.scss */
+#edit_main li i.ticked {
+  color: #48d4d1;
+  position: relative;
+  right: 10px;
+}
+/* line 371, main.scss */
+#edit_main li.non-selected i.material-icons {
+  display: none;
+}
+
+/* line 379, main.scss */
+#about_main {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+}
+/* line 382, main.scss */
+#about_main img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 120px auto 10px;
+}
+/* line 388, main.scss */
+#about_main h3 {
+  margin: 12px auto;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 393, main.scss */
+#about_main p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* line 400, main.scss */
+#help_main {
+  margin: 40px;
+}
+/* line 402, main.scss */
+#help_main p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (orientation: landscape) {
+  /* line 411, main.scss */
+  #portrait {
+    display: none;
+  }
+
+  /* line 414, main.scss */
+  #landscape {
+    font-family: 'Droid Sans', sans-serif;
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  /* line 420, main.scss */
+  #landscape .container {
+    width: 360px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 120px;
+  }
+  /* line 425, main.scss */
+  #landscape .container img {
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+    float: left;
+  }
+  /* line 431, main.scss */
+  #landscape .container h2 {
+    font-size: 24px;
+    margin: 10px 0 16px;
+  }
+  /* line 435, main.scss */
+  #landscape .container p {
+    font-size: 20px;
+  }
+}
+/*------ Material Design --------*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/iconfont/MaterialIcons-.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/iconfont/MaterialIcons-Regular.woff) format("woff"), url(../fonts/iconfont/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+/* line 452, main.scss */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

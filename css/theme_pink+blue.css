@@ -1,0 +1,142 @@
+/* line 11, theme_pink+blue.scss */
+.pink_blue {
+  background: #fdf7e5;
+}
+/* line 13, theme_pink+blue.scss */
+.pink_blue #landscape {
+  background: #fba0bc;
+}
+/* line 16, theme_pink+blue.scss */
+.pink_blue nav {
+  background: #473561;
+  color: #fdf7e5;
+}
+/* line 19, theme_pink+blue.scss */
+.pink_blue nav i {
+  color: #fdf7e5;
+}
+/* line 24, theme_pink+blue.scss */
+.pink_blue #inpt_search {
+  border: none;
+  border-bottom: solid 1px #fdf7e5;
+  color: #fdf7e5;
+}
+/* line 28, theme_pink+blue.scss */
+.pink_blue #inpt_search::before {
+  border-bottom: solid 1px #fdf7e5;
+}
+/* line 36, theme_pink+blue.scss */
+.pink_blue #main ul li .select_input {
+  color: #473561;
+}
+/* line 39, theme_pink+blue.scss */
+.pink_blue #main ul li .loc_input {
+  color: #fdf7e5;
+}
+/* line 42, theme_pink+blue.scss */
+.pink_blue #main ul li .loc_title {
+  color: #fdf7e5;
+}
+/* line 45, theme_pink+blue.scss */
+.pink_blue #main ul li .select_title {
+  color: #473561;
+}
+/* line 48, theme_pink+blue.scss */
+.pink_blue #main ul li .loc_p {
+  color: rgba(253, 247, 229, 0.8);
+}
+/* line 51, theme_pink+blue.scss */
+.pink_blue #main ul li .select_p {
+  color: rgba(70, 115, 157, 0.8);
+}
+/* line 55, theme_pink+blue.scss */
+.pink_blue #main ul .location {
+  background: #fba0bc;
+}
+/* line 58, theme_pink+blue.scss */
+.pink_blue #main ul .location ::-webkit-input-placeholder {
+  color: rgba(253, 247, 229, 0.8);
+}
+/* line 61, theme_pink+blue.scss */
+.pink_blue #main ul .location :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(253, 247, 229, 0.8);
+}
+/* line 65, theme_pink+blue.scss */
+.pink_blue #main ul .location ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(253, 247, 229, 0.8);
+}
+/* line 69, theme_pink+blue.scss */
+.pink_blue #main ul .location :-ms-input-placeholder {
+  color: rgba(253, 247, 229, 0.8);
+}
+/* line 73, theme_pink+blue.scss */
+.pink_blue #main ul .selection {
+  background: #b5e6e1;
+}
+/* line 76, theme_pink+blue.scss */
+.pink_blue #main ul .selection ::-webkit-input-placeholder {
+  color: rgba(70, 115, 157, 0.4);
+}
+/* line 79, theme_pink+blue.scss */
+.pink_blue #main ul .selection :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(70, 115, 157, 0.4);
+}
+/* line 83, theme_pink+blue.scss */
+.pink_blue #main ul .selection ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(70, 115, 157, 0.4);
+}
+/* line 87, theme_pink+blue.scss */
+.pink_blue #main ul .selection :-ms-input-placeholder {
+  color: rgba(70, 115, 157, 0.4);
+}
+/* line 92, theme_pink+blue.scss */
+.pink_blue #main button {
+  color: #fdf7e5;
+  background: #473561;
+}
+/* line 101, theme_pink+blue.scss */
+.pink_blue #settings_main ul li.tap:hover {
+  background: #b5e6e1;
+}
+/* line 106, theme_pink+blue.scss */
+.pink_blue #settings_main ul li h3,
+.pink_blue #settings_main ul li h2,
+.pink_blue #settings_main ul li p {
+  color: #473561;
+}
+/* line 109, theme_pink+blue.scss */
+.pink_blue #settings_main ul li label {
+  background: #473561;
+}
+/* line 112, theme_pink+blue.scss */
+.pink_blue #settings_main ul li #switch::before {
+  background: #473561;
+  transition: all 300ms ease-in 0s;
+}
+/* line 116, theme_pink+blue.scss */
+.pink_blue #settings_main ul li #switch:checked:before {
+  box-shadow: inset 0 0 0 0 #473561, 0 0 5px 0 gray;
+  transition: all 300ms ease-in 0s;
+}
+/* line 120, theme_pink+blue.scss */
+.pink_blue #settings_main ul li #switch:checked + label {
+  box-shadow: inset 0 0 0 0 gray;
+  transition: all 300ms ease-in 0s;
+}
+/* line 130, theme_pink+blue.scss */
+.pink_blue #edit_main li h2,
+.pink_blue #edit_main li p {
+  color: #473561;
+}
+/* line 135, theme_pink+blue.scss */
+.pink_blue #about_main {
+  color: #473561;
+}
+/* line 139, theme_pink+blue.scss */
+.pink_blue #help_main {
+  color: #473561;
+}

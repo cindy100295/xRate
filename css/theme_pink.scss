@@ -1,0 +1,142 @@
+//Theme_Pink
+//------ color --------
+$dark: #431834;
+$pink: #F18584;
+$gray: #9F6362;
+//rgba(159, 99, 98)
+$light_p:#F9BEBD;
+$bg: #FAEDDD;
+//rgb(250, 237, 221)
+//e.g.rgb(232, 241, 242)
+.pink {
+  background: $bg;
+  #landscape {
+    background: $pink;
+  }
+  nav {
+    background: $dark;
+    color: $bg;
+    i {
+      color: $bg;
+    }
+  }
+  
+  #inpt_search {
+      border: none;
+      border-bottom: solid 1px $bg;
+      color: $bg;
+      &::before {
+        border-bottom: solid 1px $bg;
+      }
+    }
+  
+  #main {
+    ul {
+      li {
+        .select_input {
+          color: $dark;
+        }
+        .loc_input {
+          color: $bg;
+        }
+        .loc_title {
+          color: $bg;
+        }
+        .select_title {
+          color: $dark;
+        }
+        .loc_p {
+          color: rgba(250, 237, 221, 0.8);
+        }
+        .select_p {
+          color: rgba(159, 99, 98, 0.8);
+        }
+      }
+      .location {
+        background: $pink;
+        //bg
+        ::-webkit-input-placeholder {
+          color: rgba(250, 237, 221, 0.4);
+        }
+        :-moz-placeholder {
+          /* Firefox 18- */
+          color: rgba(250, 237, 221, 0.4);
+        }
+        ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: rgba(250, 237, 221, 0.4);
+        }
+        :-ms-input-placeholder {
+          color: rgba(250, 237, 221, 0.4);
+        }
+      }
+      .selection {
+        background: $light_p;
+        //gray
+        ::-webkit-input-placeholder {
+          color: rgba(159, 99, 98, 0.4);
+        }
+        :-moz-placeholder {
+          /* Firefox 18- */
+          color: rgba(159, 99, 98, 0.4);
+        }
+        ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: rgba(159, 99, 98, 0.4);
+        }
+        :-ms-input-placeholder {
+          color: rgba(159, 99, 98, 0.4);
+        }
+      }
+    }
+    button {
+      color: $bg;
+      background: $dark;
+    }
+  }
+  //  --- end #main ---
+  #settings_main {
+    ul {
+      li {
+        &.tap:hover {
+          background: $light_p;
+        }
+        h3,
+        h2,
+        p {
+          color: $dark;
+        }
+        label {
+          background: $dark;
+        }
+        #switch::before {
+          background: $dark;
+          transition: all 300ms ease-in 0s;
+        }
+        #switch:checked:before {
+          box-shadow: inset 0 0 0 0 $dark, 0 0 5px 0 gray;
+          transition: all 300ms ease-in 0s;
+        }
+        #switch:checked + label {
+          box-shadow: inset 0 0 0 0 gray;
+          transition: all 300ms ease-in 0s;
+        }
+      }
+    }
+  }
+  #edit_main {
+    li {
+      h2,
+      p {
+        color: $dark;
+      }
+    }
+  }
+  #about_main {
+    color: $dark;
+  }
+  
+  #help_main {
+    color: $dark;
+  }
+}

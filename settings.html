@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>xRate</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_title.png" />
+    <meta name="description" content="Exchange Currency, web app, convert currency">
+    <meta name="author" content="Cindy Guo">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  -------- material google ------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  -------- .css ------->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--  -------- themes.css ------->
+    <link rel="stylesheet" href="css/theme_default.css">
+    <link rel="stylesheet" href="css/theme_green+yellow.css">
+    <link rel="stylesheet" href="css/theme_red.css">
+    <link rel="stylesheet" href="css/theme_pink.css">
+    <link rel="stylesheet" href="css/theme_green+blue.css">
+    <link rel="stylesheet" href="css/theme_pink+blue.css">
+    <!--  -------- font ------->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+</head>
+
+<body class="default" id="settings-html">
+    <div id="landscape">
+        <div class="container">
+            <img src="img/oops.png">
+            <div>
+                <h2>Oops!</h2>
+                <p>Please rotate your phone!</p>
+            </div>
+        </div>
+    </div>
+    <div id="portrait">
+        <nav>
+            <i class="material-icons" onclick="jmp2Page('index.html')">arrow_back</i>
+            <div>Settings</div>
+        </nav>
+        <div id="settings_main">
+            <ul>
+
+                <li class="access">
+                    <h2>Access Location</h2>
+                    <p>It will identify the local currency automatically when access location is truned on</p>
+                    <div>
+                        <input type="checkbox" id="switch" />
+                        <label for="switch" class="label"></label>
+                    </div>
+                </li>
+
+                <li class="tap" onclick="jmp2Page('themes.html')">
+                    <h3>Themes</h3>
+                </li>
+
+                <li class="tap" onclick="jmp2Page('help.html')">
+                    <h3>Help</h3>
+                </li>
+
+                <li class="tap" onclick="jmp2Page('about.html')">
+                    <h3>About</h3>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- JAVASCRIPT -->
+
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        var body_theme = $('body').attr('class');
+        if (typeof (Storage) != "undefined") {
+            var theme_sel = localStorage.getItem("theme_set");
+            if (theme_sel != null && body_theme != theme_sel) {
+                $('body').removeClass(body_theme);
+                $('body').addClass(theme_sel);
+            }
+        }
+    </script>
+
+    <!--  ------ Geolocation --------->
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+
+</html>

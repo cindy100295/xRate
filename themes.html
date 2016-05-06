@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>xRate</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_title.png" />
+    <meta name="description" content="Exchange Currency, web app, convert currency">
+    <meta name="author" content="Cindy Guo">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  -------- material google ------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  -------- .css ------->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css-add2home.css">
+    <!--  -------- themes.css ------->
+    <link rel="stylesheet" href="css/theme_default.css">
+    <link rel="stylesheet" href="css/theme_green+yellow.css">
+    <link rel="stylesheet" href="css/theme_red.css">
+    <link rel="stylesheet" href="css/theme_pink.css">
+    <link rel="stylesheet" href="css/theme_green+blue.css">
+    <link rel="stylesheet" href="css/theme_pink+blue.css">
+    <!--  -------- font ------->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+</head>
+
+<body class="default" id="themes-html">
+    <div id="landscape">
+        <div class="container">
+            <img src="img/oops.png">
+            <div>
+                <h2>Oops!</h2>
+                <p>Please rotate your phone!</p>
+            </div>
+        </div>
+    </div>
+    <div id="portrait">
+        <div id="theme_wrap">
+            <nav>
+                <i class="material-icons" onclick="jmp2Page('settings.html')">arrow_back</i>
+                <div>Theme</div>
+            </nav>
+            <ul id="theme_main">
+                <li class="sel_theme active_theme" id="default">
+                    <img src="img/theme_default.svg">
+                    <i class="material-icons">done</i>
+                </li>
+                <li class="sel_theme" id="green_yellow">
+                    <img src="img/theme_green+yellow.svg">
+                    <i class="material-icons">done</i>
+                </li>
+                <li class="sel_theme" id="red">
+                    <img src="img/theme_red.svg">
+                    <i class="material-icons">done</i>
+                </li>
+                <li class="sel_theme" id="pink">
+                    <img src="img/theme_pink.svg">
+                    <i class="material-icons">done</i>
+                </li>
+                <li class="sel_theme" id="green_blue">
+                    <img src="img/theme_green+blue.svg">
+                    <i class="material-icons">done</i>
+                </li>
+                <li class="sel_theme" id="pink_blue">
+                    <img src="img/theme_pink+blue.svg">
+                    <i class="material-icons">done</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- JAVASCRIPT -->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        var body_theme = $('body').attr('class');
+        if (typeof (Storage) != "undefined") {
+            var theme_sel = localStorage.getItem("theme_set");
+            if (theme_sel != null && body_theme != theme_sel) {
+                $('body').removeClass(body_theme);
+                $('body').addClass(theme_sel);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
